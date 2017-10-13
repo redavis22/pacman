@@ -59,7 +59,7 @@ Pacman.Ghost = function (game, map, colour) {
     
     function isVunerable() { 
        //change here
-	return eatable !== null;
+	return eatable === null;
     };
     
     function isDangerous() {
@@ -68,7 +68,7 @@ Pacman.Ghost = function (game, map, colour) {
 
     function isHidden() { 
         //change eatable
-	return eatable === null && eaten !== null;
+	return eatable !== null && eaten !== null;
     };
     
     function getRandomDirection() {
